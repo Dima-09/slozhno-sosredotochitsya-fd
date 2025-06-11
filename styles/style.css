@@ -1,19 +1,49 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-:root{
-  --accent-font:'IBM Plex mono';
-  --accent-color: #FF0070;
-  --accent-title-color: #DB00FF;
-  --accent-text-color: #000028;
-  --accent-font-size: 18px;
-  --decirative-text-color: #F1B2CE;
 
+/* Эленменты декора и переиспользуемые элементы */
+
+.corner{
+  position: relative;
 }
+
+.corner::before{
+  content: "";
+  position: absolute;
+  border-block-start: 1px solid var(--accent-color);
+  border-inline-end: 1px solid var(--accent-color);
+  width: 25px;
+  height: 25px;
+  right: 0;
+  top: 0;
+}
+
+.corner::after{
+  content: "";
+  position: absolute;
+  border-block-end: 1px solid var(--accent-color);
+  border-inline-start: 1px solid var(--accent-color);
+  width: 25px;
+  height: 25px;
+  bottom: 20px;
+  left: 0;
+}
+
+.title-decor{
+  color: var(--decorative-text-color);
+  background-color: var(--accent-color);
+}
+
+/* Основной код */
 
 .page {
   font-family: var(--accent-font), monospace;
   font-size: var(--accent-font-size);
   font-weight: normal;
-  padding: 0 10px;
+  padding: 10px;
+}
+
+.header{
+  height: 100dvh;
 }
 
 .rec{
@@ -21,8 +51,7 @@
   line-height: 25px;
   font-size: 18px;
   position: absolute;
-  top: 10px;
-  right: 19px;
+  right: 9px;
   display: flex;
   align-items: center;
 }
@@ -41,7 +70,7 @@
   display: grid;
   justify-content: end;
   gap: 10px;
-  padding-top: 75px;
+  padding-top: 65px;
 }
 
 .header__theme-menu-item{
@@ -59,12 +88,16 @@
   padding: 0 13px;
 }
 
-
 .header__title{
-  margin-top: 65px;
+  margin-block-start: 65px;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 82.5%;
   color: var(--accent-title-color);
   text-shadow: 4px 4px 0 var(--accent-color);
 }
 
+.header__description{
+  margin-block-start: 55px;
+  white-space: pre-line;
+  line-height: 23.4px;
+}
