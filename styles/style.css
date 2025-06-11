@@ -2,18 +2,22 @@
 :root{
   --accent-font:'IBM Plex mono';
   --accent-color: #FF0070;
+  --accent-title-color: #DB00FF;
   --accent-text-color: #000028;
-  --text-color: #F1B2CE;
+  --accent-font-size: 18px;
+  --decirative-text-color: #F1B2CE;
 
 }
 
 .page {
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), monospace;
+  font-size: var(--accent-font-size);
+  font-weight: normal;
+  padding: 0 10px;
 }
 
 .rec{
   color: var(--accent-color);
-  font-weight: normal;
   line-height: 25px;
   font-size: 18px;
   position: absolute;
@@ -32,3 +36,35 @@
   background-color: var(--accent-color);
   box-shadow: 0 0 4px var(--accent-color);
 }
+
+.header__theme-menu-list{
+  display: grid;
+  justify-content: end;
+  gap: 10px;
+  padding-top: 75px;
+}
+
+.header__theme-menu-item{
+  height: 26px;
+}
+
+.header__theme-menu-button{
+  font-family: var(--accent-font);
+  font-size: var(--accent-font-size);
+  font-weight: normal;
+  color: var(--accent-color);
+  background-color: transparent;
+  border: none;
+  text-transform: lowercase;
+  padding: 0 13px;
+}
+
+
+.header__title{
+  margin-top: 65px;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  line-height: 82.5%;
+  color: var(--accent-title-color);
+  text-shadow: 4px 4px 0 var(--accent-color);
+}
+
