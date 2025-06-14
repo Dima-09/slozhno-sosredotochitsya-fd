@@ -11,4 +11,11 @@
   --decorative-text-color: #000028;
   --accent-text-color: #F1B2CE;
   --background: url("../images/cover-image-dark.png");
+  --padding-section: 10px;
+}
+
+@media(width >= 768px){
+  :root{
+    --padding-section: 20px;
+  }
 }
