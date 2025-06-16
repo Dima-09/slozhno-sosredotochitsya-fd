@@ -12,5 +12,19 @@
 }
 
 .theme-dark .page {
-  /* Вам также нужно будет написать ряд подобных селекторов */
+  --accent-color: #FF0070;
+  --accent-title-color: #DB00FF;
+  --decorative-text-color: #000028;
+  --accent-text-color: #F1B2CE;
+  --background: url("../images/cover-image-dark.png");
+  --corner-color: #FF0070;
+  --bg-color: #000028;
 }
+
+.theme-dark .rec{
+  display: flex;
+}
+
+.theme-dark  .header__theme-menu-button{
+    color: var(--accent-color);
+  }

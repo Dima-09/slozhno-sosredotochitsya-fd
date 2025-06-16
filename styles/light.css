@@ -14,7 +14,33 @@
   --decorative-text-color: #353430;
   --accent-text-color: #353430;
   --background: url("../images/cover-image-light.png");
+  --corner-color: #353430;
+  --bg-color: #FFF1F7;
 }
+
+@media (prefers-color-scheme: light) {
+  :root {
+  --accent-color: #FF8DCB;
+  --accent-title-color: #FFC2E6;
+  --decorative-text-color: #353430;
+  --accent-text-color: #353430;
+  --background: url("../images/cover-image-light.png");
+  --corner-color: #353430;
+  --bg-color: #FFF1F7;
+  }
+
+  .rec{
+    display: none;
+  }
+
+  .header__theme-menu-button{
+    color: var(--accent-text-color);
+  }
+}
+
+.theme-light .rec{
+    display: none;
+  }
 
 .theme-light .page {
   /* Вам также нужно будет написать ряд подобных селекторов */

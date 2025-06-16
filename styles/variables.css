@@ -6,12 +6,14 @@
 :root{
   --accent-font:'IBM Plex mono';
   --accent-font-size: 18px;
+  --padding-section: 10px;
   --accent-color: #FF0070;
   --accent-title-color: #DB00FF;
   --decorative-text-color: #000028;
   --accent-text-color: #F1B2CE;
+  --bg-color: #000028;
   --background: url("../images/cover-image-dark.png");
-  --padding-section: 10px;
+  --corner-color: #FF0070;
 }
 
 @media(width >= 768px){

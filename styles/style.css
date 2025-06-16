@@ -5,8 +5,8 @@
 .corner::before{
   position: absolute;
   content: "";
-  border-block-start: 1px solid var(--accent-color);
-  border-inline-end: 1px solid var(--accent-color);
+  border-block-start: 1px solid var(--corner-color);
+  border-inline-end: 1px solid var(--corner-color);
   width: 25px;
   height: 25px;
   right: var(--padding-section);
@@ -16,8 +16,8 @@
 .corner::after{
   position: absolute;
   content: "";
-  border-block-end: 1px solid var(--accent-color);
-  border-inline-start: 1px solid var(--accent-color);
+  border-block-end: 1px solid var(--corner-color);
+  border-inline-start: 1px solid var(--corner-color);
   width: 25px;
   height: 25px;
   left: var(--padding-section);
@@ -79,9 +79,22 @@
   background-color: var(--accent-color);
 }
 
-.text-decor{
+.link{
   text-shadow: 1px 1px 0 var(--accent-color);
   text-decoration: none;
+}
+
+.link:focus-visible{
+  outline: 1px solid var(--accent-text-color);
+}
+
+.link:hover{
+  text-decoration: underline;
+  text-decoration-color: var(--accent-text-color);
+}
+
+.accent-span{
+  display: block;
 }
 
 /* Основной код */
@@ -90,10 +103,10 @@
   font-family: var(--accent-font), monospace;
   font-weight: normal;
   background-image: var(--background);
+  background-color: var(--bg-color);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-
 }
 
 .header{
@@ -147,6 +160,20 @@
   border: none;
   text-transform: lowercase;
   padding: 0 13px;
+  outline: none;
+}
+
+.header__theme-menu-button_active{
+  border: 1px solid var(--accent-color);
+}
+
+.header__theme-menu-button:hover{
+  cursor: pointer;
+  --accent-color: rgba(255 0 112 / 0.2);
+}
+
+.header__theme-menu-button:focus-visible{
+  border-bottom: 1px solid var(--accent-color);
 }
 
 .header__title{
