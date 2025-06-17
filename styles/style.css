@@ -221,7 +221,7 @@
 }
 
 @media(width >= 768px) {
-  .header{
+  .header {
     padding: var(--padding-section) var(--padding-section) var(--padding-section) 0;
     grid-template-columns: 1fr 364px;
   }
@@ -301,7 +301,7 @@
 }
 
 @media(width >= 1024px) {
-  .header{
+  .header {
     grid-template-columns: 1fr 491px;
   }
   .header__theme-menu {
