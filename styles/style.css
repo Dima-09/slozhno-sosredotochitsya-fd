@@ -100,7 +100,7 @@
 /* Основной код */
 
 .page {
-  font-family: var(--accent-font), monospace;
+  font-family: var(--accent-font), 'Consolas', monospace;
   font-weight: normal;
   background-image: var(--background);
   background-color: var(--bg-color);
@@ -152,7 +152,7 @@
 }
 
 .header__theme-menu-button {
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), 'Consolas', monospace;
   font-size: var(--accent-font-size);
   font-weight: normal;
   color: var(--second-color);
