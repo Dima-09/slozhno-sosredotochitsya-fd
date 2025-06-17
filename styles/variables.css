@@ -3,7 +3,7 @@
   и их переопределение под различные устройства
 */
 
-:root{
+:root {
   --accent-font:'IBM Plex mono';
   --accent-font-size: 18px;
   --padding-section: 10px;
@@ -17,8 +17,8 @@
   --border-color: rgb(255 0 112 / 0.4);
 }
 
-@media(width >= 768px){
-  :root{
+@media(width >= 768px) {
+  :root {
     --padding-section: 20px;
   }
 }
