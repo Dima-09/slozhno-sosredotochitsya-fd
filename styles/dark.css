@@ -17,14 +17,10 @@
   --decorative-text-color: #000028;
   --accent-text-color: #F1B2CE;
   --background: url("../images/cover-image-dark.png");
-  --corner-color: #FF0070;
+  --second-color: #FF0070;
   --bg-color: #000028;
 }
 
 .theme-dark .rec{
   display: flex;
 }
-
-.theme-dark  .header__theme-menu-button{
-    color: var(--accent-color);
-  }

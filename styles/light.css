@@ -14,7 +14,7 @@
   --decorative-text-color: #353430;
   --accent-text-color: #353430;
   --background: url("../images/cover-image-light.png");
-  --corner-color: #353430;
+  --second-color: #353430;
   --bg-color: #FFF1F7;
 }
 
@@ -25,16 +25,12 @@
   --decorative-text-color: #353430;
   --accent-text-color: #353430;
   --background: url("../images/cover-image-light.png");
-  --corner-color: #353430;
+  --second-color: #353430;
   --bg-color: #FFF1F7;
   }
 
   .rec{
     display: none;
-  }
-
-  .header__theme-menu-button{
-    color: var(--accent-text-color);
   }
 }
 
