@@ -194,6 +194,10 @@
   padding: var(--padding-section);
 }
 
+.advice .card__title {
+  font-weight: normal;
+}
+
 .gallery {
   gap: 10px;
 }
