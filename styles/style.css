@@ -107,6 +107,7 @@
 
 .header {
   position: relative;
+  min-height: 668px;
   height: 100dvh;
   padding: var(--padding-section);
   display: grid;
