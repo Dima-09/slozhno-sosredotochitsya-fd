@@ -93,10 +93,6 @@
   text-decoration-color: var(--accent-text-color);
 }
 
-.accent-span {
-  display: block;
-}
-
 /* Основной код */
 
 .page {
@@ -185,7 +181,6 @@
 }
 
 .header__description {
-  white-space: pre-line;
   line-height: 23.4px;
   font-weight: bold;
   font-size: var(--accent-font-size);
@@ -222,8 +217,7 @@
 
 @media (width >= 768px) {
   .header {
-    padding: var(--padding-section) var(--padding-section)
-      var(--padding-section) 0;
+    padding: var(--padding-section) var(--padding-section) var(--padding-section) 0;
     grid-template-columns: 1fr 364px;
   }
 
@@ -314,11 +308,6 @@
     grid-auto-flow: column;
     padding-left: 20px;
     justify-content: center;
-  }
-
-  .header__description {
-    white-space: normal;
-    max-width: 491px;
   }
 
   .focus-section {
