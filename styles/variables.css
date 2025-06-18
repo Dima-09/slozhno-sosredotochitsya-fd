@@ -4,20 +4,20 @@
 */
 
 :root {
-  --accent-font:'IBM Plex mono';
+  --accent-font: 'IBM Plex mono';
   --accent-font-size: 18px;
   --padding-section: 10px;
-  --accent-color: #FF0070;
-  --accent-title-color: #DB00FF;
+  --accent-color: #ff0070;
+  --accent-title-color: #db00ff;
   --decorative-text-color: #000028;
-  --accent-text-color: #F1B2CE;
+  --accent-text-color: #f1b2ce;
   --bg-color: #000028;
-  --background: url("../images/cover-image-dark.png");
+  --background: url('../images/cover-image-dark.png');
   --second-color: #ff0070;
   --border-color: rgb(255 0 112 / 0.4);
 }
 
-@media(width >= 768px) {
+@media (width >= 768px) {
   :root {
     --padding-section: 20px;
   }
