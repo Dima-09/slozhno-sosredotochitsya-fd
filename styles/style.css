@@ -89,7 +89,7 @@
 }
 
 .link:hover {
-  text-decoration: underline;
+  border-bottom: 1px solid currentColor;
   text-decoration-color: var(--accent-text-color);
 }
 
@@ -161,7 +161,7 @@
 }
 
 .header__theme-menu-button_active {
-  border: 1px solid var(--second-color);
+  outline: 1px solid var(--second-color);
 }
 
 .header__theme-menu-button:hover {
